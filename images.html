@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #414141;
+        }
+    </style>
+</head>
+<body>
+    <!-- unsplash, pexels.com for free images -->
+
+    <!-- 'alt' = used when image is not shown to user -->
+    <img src="" alt="No image"> 
+    <br/>
+    <hr/>
+    <!-- copy image address -->
+    <img src="https://images.pexels.com/photos/18096595/pexels-photo-18096595/free-photo-of-music-on-street.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" width="500px" alt="No Image">
+    <img src="https://images.pexels.com/photos/909496/pexels-photo-909496.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="500px" alt="No Image">
+    <hr or />
+    <img src="https://images.pexels.com/photos/909498/pexels-photo-909498.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="500px" alt="No Image">
+    <img src="https://images.pexels.com/photos/909489/pexels-photo-909489.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="500px" alt="No Image">
+    <hr>
+
+    <!-- image form local resource --> 
+    <!-- 
+        ./ = current folder,    ./../ = ek folder peeche jana hoto,       ./folderName = ek folder aage jane k liye
+        Imp = no spaces in image name 
+    -->   
+    <img src="./r_slime.png" width="500px" alt="No Image">
+
+    <!-- we have 'img' then why use 'picture' 
+        bcz when we use 'picture'  then we need to use 'source' [it is self-closing element]
+    -->
+        <!-- 
+        Q. If we are gonna use img tag inside picture then why don't we already use img tag outside and what is the need of that source ?
+        A. In source by using media attribute we can check the screen size of the device and a/c to the screen size we provide images. Ex if our page is viewed in mobile then we can set srcset to show a mobile specific image.
+        and img is there bcz if above source are unable to show image then this shows.
+        -->
+    <picture>
+        <source media="(min-width: 650px)" srcset="./r_slime.png" />
+        <source media="(min-width: 460px)" srcset="./r_slime.png" />
+        <img src="./r_slime.png" width="500px" alt="">
+    </picture>
+
+
+    <!-- Image map generator -->
+    <img src="r_slime.png" usemap="#image-map">
+
+    <map name="image-map">
+        <area onclick="leftEye()" target="" alt="" title="" href="" coords="2020,988,2726,760" shape="rect">
+        <area onclick="rightEye()" target="" alt="" title="" href="" coords="1550,988,908,779" shape="rect">
+    </map>
+
+    <script>
+        function leftEye() {
+            alert("You clicked on left eye")
+        }
+        function rightEye() {
+            alert("You clicked on right eye")
+        }
+    </script>
+
+
+</body>
+</html>

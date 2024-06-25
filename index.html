@@ -1,0 +1,89 @@
+<!-- 
+    index.html is an HTML file that serves as the home page for a website
+
+    html is used for structuring the webpage,
+    html = it is not case sensitive {head == HEAD},
+    never forgot to colse html tag 
+-->
+
+<!-- !DOCTYPE html = this doc is type html {this info for browser} -->
+<!DOCTYPE html>
+
+<!-- it shows language of this html file -->
+<html lang="en">
+
+    <!-- html has 2 childs i.e. head and body -->
+
+    <head>
+        <!-- meta = metadata -->
+        <!-- info. which we don't waana show to user but it is imp for the webpage to be there -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- title and icon(favicon) are shown in the "tab part" -->
+        <!-- title and fevicon are visible to us in a webpage in head part-->
+        <!-- favicon = icon/image left side of title -->
+        <!-- title also knows as grandchild -->
+        <title>HTML toturial</title>
+    </head>
+
+    <!-- body is all 99% of main webpage  -->
+
+    <body>
+        <!-- <h1></h1>, <h2></h2> => they define the structure of our webpage -->
+
+        <!-- few keywords in html => html elements, tags, atributes -->
+        <!-- ex = <h1 title = "heading one"></h1> -->
+        <!-- 
+            so in above example 
+            element = <h1 title = "heading one"></h1>
+            tags = h1
+            attributes = title 
+        -->
+
+        <h1 title="Heading One">Heading one</h1>
+
+        <!-- ('a' tag)
+            anchor tag = for opening a link 
+            in this "href" attribute is imp  
+            href = hyperlink reference 
+
+            if href = "#" means = we later put its value
+        -->
+        <a href="https://www.google.com/">Google</a>
+
+        <!-- 
+        target : 
+            _blank = open link in new tab
+            _self = open link in current tab 
+            _parent = open link in parent tab if parent tab not exists then open in _self
+            _top = open link in top-most/first tab. 
+                    (this means the "highest" context that's an ancestor of the current one.) 
+                    if top tab not exists then open in _self. 
+
+        rel : 
+            noopener = When you open a link in a new tab or window (target="_blank"), using rel="noopener" prevents 
+            the new page from controlling the referring page, thus mitigating security risks such as phishing attacks.
+
+            noreferrer = The noreferrer value prevents the browser from sending the Referer header to the new page. 
+                            This means the new page will not know where the link originated from.
+
+            nofollow = The nofollow value tells search engines not to follow the link.
+
+            bookmark = This can be used for links to important articles, posts, or resources that users might 
+                        want to save or bookmark for future reference.
+            ex: <a href="https://example.com/article" rel="bookmark">Bookmark this article</a>
+
+        -->
+
+        <a href="http://www.youtube.com" target="_blank" rel="noopener  noreferrer">You tube</a>
+        
+        
+    
+    </body>
+
+
+</html>
+
+
+<!-- For live server : ctrl shift P -->

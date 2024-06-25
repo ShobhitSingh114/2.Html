@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            color: aqua;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+    <title>Colors</title>
+</head>
+<body>
+    <h1>Formatting</h1>
+
+    <!-- 
+    Q. 'b' and 'strong' both can do a word bold so what we should use 
+    A. 'b' uses when we have to just bold a letter but information is not that much impactful. 
+        But on the other hand 
+        'strong' use where we want to show that perticular information is important 
+     -->
+    <p>this is <strong>important</strong></p>
+    <p>this is <i>italics</i></p>
+    <p>this is <em>emphasis</em></p>
+
+    <!-- shortcut = ul>li*4 -->
+    <ul>
+        <li>b; strong</li>
+        <li>small</li>
+        <li>i; em</li>
+        <li>sub, sup</li> <!-- subscript, superscript -->
+        <li>del, mark</li>
+    </ul>
+
+    <!-- sub and sup -->
+    <p>H<sub>2</sub>O</p>
+    <p>Einstine's Theory of Relativity equation : e = mc<sup>2</sup></p>
+
+    <!-- del & mark -->
+    <p><del>Delete</del>  <mark> mark </mark> </p>
+    <p><del>Old Price</del>  <mark> New Price </mark> </p>
+    <p> <small>Small</small> </p>
+
+    <!-- 'a' in ragba is alpha [opacity] -->
+    <h3     
+        style = "background-color: rgba(37, 145, 198, .8); 
+        text-align: center;
+        color: gold;"
+    >
+        This Tag need some Styling
+    </h3>
+
+    <p>
+        <blockquote cite="Melon">
+            This quote cited by who
+        </blockquote>
+        <q>
+            This quote is cited by who
+        </q>
+        <abbr title="Hyper Text Markup Language">
+            HTML
+        </abbr>
+
+        <!--address = use when dealing with contact information -->
+        <address>
+            contant the author of this page <br/>
+            <a href="mailto:vim@gmail.com;">vim@gmail.com</a>
+            <br/>
+            <a href="tel:+1234567890">+1234567890</a>
+        </address>
+
+        <!-- cite : used where = To include a reference to the source of quoted material which is contained within a <blockquote> or <q> element, use the cite attribute on the element. -->
+        <cite>
+            This quote : <br/>
+            <blockquote>
+                Truth doesn'r exist in this word, <br/>
+                Only prespective does. <br/>
+            </blockquote>
+            Given by <br/> 
+            <a href="">Me</a> <br/>
+        </cite>
+
+        <br/>
+        <br/>
+        <!-- bidirectional -->
+        <bdo dir="rtl"> YaY Mitesh</bdo>
+    </p>
+    
+
+</body>
+</html>
