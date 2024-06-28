@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+</head>
+<body>
+    <!-- How to integrate media(video & audio) in website  -->
+     <!-- Q. Does this include YT / vimeo types video 
+     A. No, for them we use iframe. 
+     ex: jab video tag use kr rhe hai tab uska meaning ye hai ki wo video hamare same server per hai jha per hamari html files hai.
+     iframe: hamari website ne ek window open kiya hai jiska use kr k hum ek third party website hamara required content show kr rhi hai. and wo video ka load us third party website k server per hai hamare nhi. -->
+
+    <video src="./Pokemon Theme Songs 1-14 CN Dub Hindi With Video 2 Bonus Videos All With Lyrics - YouTube.mp4"
+     width="320" height="240" controls muted autoplay></video>
+
+    <!-- ye wala live server per show nhi karega, code is correct that issue is related to live server 
+    but live preview and normal webpage open karenge to chal jaega -->
+    <video src="../../../Pokemon Theme Songs 1-14 CN Dub Hindi With Video 2 Bonus Videos All With Lyrics - YouTube.mp4"
+     width="100%" controls muted autoplay></video>
+
+    <!-- is mai bhi video jaise he attributes hai  -->
+    <audio src=""></audio>
+
+    <!-- html mai hum api use nhi kr sakte directly. Ye kr ne k liye JS ka use kr na hoga -->
+    <!-- canvas and drag and drop features also needed Js to implement, we cannot do them natively in html -->
+</body>
+</html>

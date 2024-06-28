@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms One</title>
+    <style>
+        body {
+            background-color: #414141;
+            color: #ffffff;
+        }
+        label {
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+        /* #firstName {
+            margin-right: 10px;
+        }
+        #lastName {
+            margin-right: 10px;
+        } */
+    </style>
+</head>
+<body>
+    <h1>Forms in HTML</h1>
+    <!-- forms mai sara data ka bundle banaya jata hai then usko ek saath server per behja jata hai  -->
+     <!-- action = is mai server url aata hai jha per form submit kr na hai  -->
+      <!-- two types of forms jinko methods se denote kr te hai 
+       method: 
+        post = jab server k ander saara data submit kr na hai tab post ka use kr te hai bcz is se data encrypt ho kr jata hai clear text format mai nhi jata hai.
+        get = isse data clear text format mai jata hai.
+        -->
+    <form action="" method="GET"    
+    accept-charset="utf-8" autocomplete="off" enctype="" >
+        <!-- for: ye batata hai ki ye kis input k saath associated hai  
+         matlab jab ye label per click karenge tab usse associated input field highlight ho jaegi-->
+        <label  id="firstName" for="fname">First Name</label>
+        <input type="text"  placeholder="first name" name="" id="fname">
+        <br />
+        <label  id="lastName" for="lname">Lirst Name</label>
+        <input type="text"  placeholder="last name" name="" id="lname">
+        <br />
+        <button type="submit">Pay</button>
+    </form>
+</body>
+</html>

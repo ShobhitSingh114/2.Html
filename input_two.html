@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Two</title>
+    <style>
+        body {
+            background-color: #414141;
+            color: #ffffff;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Forms in HTML</h1>
+
+    <form action="" method="GET"    
+    accept-charset="utf-8" autocomplete="off" enctype="" >
+        
+        <label  id="firstName" for="fname">First Name</label>
+        <br />
+                
+        <!-- <input> tag specifies an input field where the user can enter data. -->
+        <!-- <input> element can be displayed in several ways, depending on the type attribute. -->
+
+        <input type="text"  placeholder="first name" name="" id="fname" value="">
+        
+        <!-- it reset input field to its original value -->
+        <input type="reset" value="reset">
+
+        <!-- this is a input of type password = meaning jo bhi is mai likhenge wo dot dot mai ho jaega for ex ek pass ko chupane k liye  -->
+        <input type="password" name="" id="">
+
+        <!-- iska use kr k drop down menu select kr sakte hai  -->
+         <!-- use multiple for selecting multiple values -->
+         <!-- <select name="editors" id="" multiple>....</select> -->
+        <select name="editors" id="">
+            <option value="VsCode">VsCode</option>
+            <option value="Sublime">Sublime</option>
+            <option value="NotePad">NotePad</option>
+        </select>
+
+        <!-- jo chij select se ke te hai whi iska use kr k bhi kiya ja sakta hai 
+        but aise kam use kr te hai  -->
+        <input list="editors" name="editors">
+        <datalist id="editors">
+            <option value="VsCode">VsCode</option>
+            <option value="Sublime">Sublime</option>
+            <option value="NotePad">NotePad</option>
+        </datalist>
+
+        <button type="submit">Submit</button>
+        <br/>
+
+        <!-- hidden: It doesn't create any new input field 
+        use: jab specially dango mai code kr te hai wha per uska bahut use hota hai 
+            bcz jab form fill kr te hai tab wha per kuch tokens bhi send kr ne padhte hai server ko or wo token user ko visible na ho is liye inka use kiya jata hai  -->
+        <input type="hidden" name="">
+
+        <!-- basic input are : colors, password, file, text, email, range, radio, checkmarks -->
+    </form>
+</body>
+</html>
